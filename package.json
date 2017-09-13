@@ -1,0 +1,146 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-view-pager@^0.5.1",
+        "scope": null,
+        "escapedName": "react-view-pager",
+        "name": "react-view-pager",
+        "rawSpec": "^0.5.1",
+        "spec": ">=0.5.1 <0.6.0",
+        "type": "range"
+      },
+      "/Users/quentinvalmori/Sites/BugRNInTeach/Webapp3"
+    ]
+  ],
+  "_from": "react-view-pager@>=0.5.1 <0.6.0",
+  "_id": "react-view-pager@0.5.1",
+  "_inCache": true,
+  "_location": "/react-view-pager",
+  "_nodeVersion": "7.10.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/react-view-pager-0.5.1.tgz_1494403555516_0.5520104321185499"
+  },
+  "_npmUser": {
+    "name": "souporserious",
+    "email": "travis@souporserious.com"
+  },
+  "_npmVersion": "4.2.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-view-pager@^0.5.1",
+    "scope": null,
+    "escapedName": "react-view-pager",
+    "name": "react-view-pager",
+    "rawSpec": "^0.5.1",
+    "spec": ">=0.5.1 <0.6.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-view-pager/-/react-view-pager-0.5.1.tgz",
+  "_shasum": "aa2d7a5e8827b870e4c9e5f2906a8b341d157d61",
+  "_shrinkwrap": null,
+  "_spec": "react-view-pager@^0.5.1",
+  "_where": "/Users/quentinvalmori/Sites/BugRNInTeach/Webapp3",
+  "author": {
+    "name": "Travis Arnold",
+    "email": "travis@souporserious.com",
+    "url": "http://souporserious.com"
+  },
+  "bugs": {
+    "url": "https://github.com/souporserious/react-view-pager/issues"
+  },
+  "dependencies": {
+    "animation-bus": "^0.2.0",
+    "get-prefix": "^1.0.0",
+    "mitt": "^1.0.0",
+    "react-motion": "^0.5.0",
+    "resize-observer-polyfill": "^1.4.2",
+    "tabbable": "^1.0.5"
+  },
+  "description": "View-Pager/Slider/Carousel powered by React Motion.",
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "chokidar": "^1.6.1",
+    "css-loader": "^0.25.0",
+    "enzyme": "^2.6.0",
+    "git-directory-deploy": "^1.5.1",
+    "http-server": "^0.9.0",
+    "mocha": "^3.2.0",
+    "node-libs-browser": "^1.0.0",
+    "node-sass": "^3.2.0",
+    "postcss-loader": "^0.13.0",
+    "prop-types": "15.5.8",
+    "react": "15.3.2",
+    "react-addons-test-utils": "15.3.2",
+    "react-dom": "15.3.2",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.9.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "aa2d7a5e8827b870e4c9e5f2906a8b341d157d61",
+    "tarball": "https://registry.npmjs.org/react-view-pager/-/react-view-pager-0.5.1.tgz"
+  },
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "gitHead": "d665e819558adca4b513966b0913ff44b4b87f6b",
+  "homepage": "https://github.com/souporserious/react-view-pager",
+  "keywords": [
+    "react",
+    "component",
+    "slider",
+    "carousel",
+    "touch",
+    "responsive",
+    "flick",
+    "gallery",
+    "DOM",
+    "browser"
+  ],
+  "license": "MIT",
+  "main": "lib/react-view-pager.js",
+  "maintainers": [
+    {
+      "name": "souporserious",
+      "email": "travis@souporserious.com"
+    }
+  ],
+  "name": "react-view-pager",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "prop-types": "^15.5.8",
+    "react": "^0.14.0 || ^15.0.0",
+    "react-dom": "^0.14.0 || ^15.0.0"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/souporserious/react-view-pager.git"
+  },
+  "scripts": {
+    "build": "npm run build:lib && NODE_ENV=production webpack --config webpack.prod.config.js",
+    "build:lib": "babel src --out-dir lib",
+    "deploy": "NODE_ENV=production TARGET=minify webpack && git-directory-deploy --directory example --branch gh-pages",
+    "dev": "webpack-dev-server --inline --hot --progress --colors --host 0.0.0.0 --devtool eval",
+    "postbuild": "NODE_ENV=production TARGET=minify webpack --config webpack.prod.config.js",
+    "prebuild": "rm -rf dist && mkdir dist",
+    "prepublish": "npm run build",
+    "test": "mocha tests/.setup.js --reporter spec tests/**/*.js"
+  },
+  "version": "0.5.1"
+}
